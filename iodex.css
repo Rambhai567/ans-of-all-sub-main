@@ -185,10 +185,14 @@ td a {
 
 .height {
   height: 200px;
+  display: flex;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
 }
 
-.table-physics :hover {
-  background-color: rgb(238, 70, 52);
+.table-physics :hover{
+  background-color: orangered;
   transition: 0.2s;
 }
 
