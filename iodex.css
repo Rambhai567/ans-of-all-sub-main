@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(254, 255, 254);
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  background-color: rgb(4, 4, 4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 33px;
+  color: rgb(245, 6, 161);
+  font-weight: bold;
+}
+
+.nav-bar ul {
+  display: flex;
+}
+
+.nav-bar ul li {
+  display: block;
+  color: rgb(248, 250, 251);
+  font-size: 20px;
+  padding: 10px 25px;
+  border-radius: 40px;
+  transition: 4.5s;
+  margin: 0 5px;
+}
+
+.active {
+  color: aliceblue;
+}
+
+.active:hover {
+  color: rgb(242, 243, 240);
+  background: rgba(17, 195, 240, 0.974);
+  border-radius: 5px;
+  font-size: 29px;
+  transition: 0.7s;
+}
+
+.activa {
+  color: rgb(245, 246, 247);
+  background-color: rgb(244, 9, 9);
+  border-radius: 5px;
+  font-size: 25px;
+}
+
+.activa:hover {
+  background-color: rgba(58, 231, 10, 0.974);
+  color: rgb(7, 7, 7);
+  font-size: 29px;
+  transition: 1s;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hamburger .line {
+  width: 30px;
+  height: 4px;
+  background: aliceblue;
+  margin: 6px 0;
+}
+
+.container {
+  margin-top: 55px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  background-color: antiquewhite;
+  text-align: center;
+  color: rgba(0, 55, 255, 0.697);
+}
+
+a {
+  text-decoration: none;
+}
+
+td a {
+  color: rgb(4, 10, 10);
+  text-decoration: none;
+}
+
+#preloader {
+  background: rgba(4, 4, 4, 0.9) url(Vanilla-3.4s-122px.gif) no-repeat center center;
+  background-size: 5%;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 100;
+}
+
+@media only screen and (max-width: 1320px) {
+  header {
+    padding: 0 50px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  header {
+    padding: 0 30px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger .line {
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 6px 0;
+  }
+
+  .nav-bar ul {
+    display: block;
+    margin: 80px auto 0 auto;
+    text-align: center;
+    transition: 2s;
+    opacity: 0;
+  }
+
+  .nav-bar {
+    height: 0px;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background: black;
+    transition: 0.2s;
+    overflow: hidden;
+  }
+
+  .nav-bar.activa {
+    height: 450px;
+  }
+
+  .nav-bar.activa ul {
+    opacity: 1;
+  }
+
+  .nav-bar ul a {
+    margin-bottom: 12px;
+  }
+
+  header {
+    padding: 0 20px;
+  }
+}
+
+.table {
+  margin-top: 55px;
+  text-align: center;
+}
+
+.table-color {
+  background: darksalmon;
+}
+
+.height {
+  height: 200px;
+}
+
+.table-physics :hover {
+  background-color: rgb(238, 70, 52);
+  transition: 0.2s;
+}
+
+.table-chemistry :hover {
+  background-color: rgb(4, 231, 252);
+  transition: 0.2s;
+}
+
+.table-biology :hover {
+  background-color: rgb(52, 238, 61);
+  transition: 0.2s;
+}
+
+.table-math :hover {
+  background-color: rgb(170, 52, 238);
+  transition: 0.2s;
+}
+
+.table-hover {
+  color: black;
+}
